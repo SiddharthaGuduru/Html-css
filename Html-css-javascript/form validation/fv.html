@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From validation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="fv.css">
+</head>
+<body>
+  <div class="container">
+        <div class="header">
+            <h2>Registration form</h2>
+        </div>
+        <form action="index.html" class="form" id="form">
+            <div class="field">
+                <label>Username</label>
+                <input type="text" id="uname" placeholder="Enter Username...">
+                <span class="material-symbols-outlined success">done</span>
+                <span class="material-symbols-outlined error">exclamation</span>
+                <small>Error message</small>
+            </div>
+            <div class="field">
+                <label>Email</label>
+                <input type="email" id="mail"placeholder="Enter Email id...">
+                <span class="material-symbols-outlined success">done</span>
+                <span class="material-symbols-outlined error">exclamation</span>
+                <small>Error message</small>
+            </div>
+            <div class="field">
+                <label>Password</label>
+                <input type="password" id="pwd" placeholder="Enter password">
+                <span class="material-symbols-outlined success">done</span>
+                <span class="material-symbols-outlined error">exclamation</span>
+                <small>Error message</small>
+            </div>
+            <div class="field">
+                <label>Confirm Password</label>
+                <input type="password" id="cpwd" placeholder="Enter confirm password">
+                <span class="material-symbols-outlined success">done</span>
+                <span class="material-symbols-outlined error">exclamation</span>
+                <small>Error message</small>
+            </div>
+            <div class="field">
+              <input type="checkbox" id="tc" class="terms">
+              <label>I agree to terms and condtions</label>
+              <small>Error message</small>
+            </div>
+            <input type="submit" class="button"> 
+        </form>
+  </div>
+  <script src="fv.js"></script>
+</body>
+</html>

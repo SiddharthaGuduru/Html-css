@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "monospace",sans-serif;
+}
+body{
+    display:flex;
+     height:100vh;
+     justify-content: center;
+     align-items: center;
+     background: linear-gradient(45deg,#1ee21484,#1323cecb);
+    }
+    
+.container{
+    background: linear-gradient(60deg,#555655ac,hsla(182, 57%, 43%, 0.714));
+    width:50%;
+    height:600px;
+    border-radius: 15px;
+    border: 2px solid #03181f;
+    box-shadow: 5px -7px 10px #0b0505d6,
+inset 5px -5px 5px #161515d4;
+   
+}
+.head{
+    border-radius: 15px;
+    box-shadow: 7px -7px 10px #191818d6,
+inset 5px -5px 5px #090909d4;
+    position:absolute;
+    top:15px;
+    border: 5px solid #02081e;
+    text-align:center;
+    font-size: 30px;
+    width:50%;
+    height:50px;
+    color:rgba(1, 9, 22, 0.92);
+    background:linear-gradient(45deg, rgba(102, 235, 217, 0.753),rgba(78, 238, 9, 0.753));
+}
+.cal{
+position: relative;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+margin-top:5px;
+padding:5px;
+width:50%;
+height:450px;
+background:linear-gradient(130deg,rgba(174, 238, 206, 0.621),rgba(46, 14, 61, 0.252));
+border-radius: 25px;
+padding: 15px 20px;
+
+box-shadow: 5px -7px 10px #0b0505d6,
+inset 5px -5px 5px #090909d4;
+}
+.display{
+    margin: 5px 0 10px 0;
+    height:70px;
+    width:100%;
+   
+    box-shadow: 5px -7px 10px #0b0505d6,
+    inset 5px -5px 5px #090909d4;
+    outline: none;
+    text-align:right;
+    font-size: 50px;
+    color:#0e1d1ef7;
+    background:linear-gradient(135deg, rgba(141, 210, 221, 0.601),rgba(27, 63, 129, 0.174));
+    border-radius: 10px 0;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+    margin-top:15px;
+}
+.buttons button{
+    border:0.5px solid #000000;
+    box-shadow: 2px -2px 4px #0b0505d6,
+    inset 5px -4px 10px #090909d4;
+    padding: 15px 5px;
+    font-size:20px;
+    border-radius:5px;
+    background: linear-gradient(135deg,rgba(3, 62, 116, 0.718),rgba(43, 196, 186, 0.654));
+}
+#operator{
+    background:linear-gradient(135deg, rgba(26, 70, 94, 0.905),rgba(9, 63, 41, 0.89));
+    color:aqua;
+}
+#op{
+    background:linear-gradient(135deg, rgba(245, 185, 7, 0.905),rgba(240, 43, 43, 0.89));
+    color:rgb(2, 14, 14);
+}
+#op:active{
+    background-color: rgb(37, 228, 228);
+}
+button:active{
+    background-color: rgb(210, 232, 14);
+    transform: translateY(0.5px);
+}
+#operator:active{
+    background-color: rgb(255, 251, 6);
+}
